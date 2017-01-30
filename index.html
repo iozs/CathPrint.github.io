@@ -1,7 +1,799 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>CathPrint AB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #9ACD32;
+      background-image: url(home.jpg);
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+  }
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #402081;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  .timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #402081;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  .timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+  .timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+  .timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #402081;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  .timeline-badge.primary {
+    background-color: #2e6da4 !important;
+  }
+  .timeline-badge.success {
+    background-color: #3f903f !important;
+  }
+  .timeline-badge.warning {
+    background-color: #f0ad4e !important;
+  }
+  .timeline-badge.danger {
+    background-color: #d9534f !important;
+  }
+  .timeline-badge.info {
+    background-color: #5bc0de !important;
+  }
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #402081;
+      font-size: 50px;
+  }
+  .logo {
+      color: #402081;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #402081;
+  }
+  .carousel-indicators li {
+      border-color: #402081;
+  }
+  .carousel-indicators li.active {
+      background-color: #402081;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #402081; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #402081;
+      background-color: #fff !important;
+      color: #402081;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #402081 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #402081;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #402081;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #402081 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #402081;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-default" href="#home"><img src="CathPrint_Logo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#media">MEDIA</a></li>
+        <li><a href="#technology">TECHNOLOGY</a></li>
+        <li><a href="#business">BUSINESS</a></li>
+        <li><a href="#people">PEOPLE</a></li>
+        <li><a href="#career">CAREER</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>CathPrint AB</h1>
+  <p>Offering catheter manufacturers improved profitability</p> 
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="text-center">
+  <h2>A New Catheter Paradigm</h2></div>
+  <div class="row">
+    <div class="col-sm-8">
+      <h4>CathPrint offers CathPrint™, a catheter design and manufacturing technology that will rationalize existing catheters or realize challenging product concepts into marketable products, thus enabling significant cost savings, improved performance and increased profitability. The technology to produce flexible printed circuit boards - flexible PCBs – has been around for a long time. This proven technology is the basis for CathPrint’s new innovative process for catheter manufacturing, CathPrint™. Instead of today's small-scale handmade manufacturing, all the wires, electrodes and contacts are put together in one semi-automatic operation.</h4><br>
+      <p>CathPrint works closely with customers to design and produce catheters and endoscopes and has established small-scale production for customers at its premises.
+      CathPrint is based in Stockholm, Sweden, and serves a variety of customers.</p>
+    </div>
+    <div class="col-sm-4">
+      <br><ul><ul><ul><ul><img src="circuit-board.png">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Media Section) -->
+<div id="media" class="container-fluid">
+    <div class="text-center">
+      <h2>In the Media</h2></div>
+    <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2006</h4>
+            <div class="timeline-body">
+              <p><a href="http://catheter.se/press/20061003.pdf">Winner of the 2006 SKAPA-pris</a>, the Swedish championship prize in innovation, awarded by the Swedish Inventors’ Association (SvenskaUppfinnarföreningen) and ALMI (ALMIFöretagspartner AB)</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2007</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Our founder Bengt Källbäck was featured on <a href="http://catheter.se/press/20070306.pdf">AffärsVärlden</a> (Business World Magazine) and CathPrint was featured on <a href="http://catheter.se/press/20061013.pdf">Dagens Medicin, NyTeknik</a> (Today's Medicine, NewTechnology<).</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2008</h4>
+            </div>
+            <div class="timeline-body">
+              <p><a href="http://catheter.se/press/20080408.pdf">AffärsVärlden</a> featured CathPrint founder BengtKällbäck: No prejudices against his age. CathPrint was featured on <a href="http://catheter.se/press/20071025.pdf">Elektronik Tidningen</a> – Electronic Magazine “Revolutionary Cuptronic catheter manufacturing method”. </p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2009</h4>
+            </div>
+            <div class="timeline-body">
+              <p>CathPrint was on  <a href="http://catheter.se/press/200910.pdf">Uppfinnaren & Konstruktören</a> (Inventor and Designer Magazines).
+CathPrint leaves <a href="http://catheter.se/press/20080304.pdf">STING’s Business Accelerator</a>: Take-off ceremony in Kista Science City.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2012</h4>
+            </div>
+            <div class="timeline-body">
+              <p>CathPrint collaborates with MRA Medical in designing and producing the <a href="http://cathprint.se/_uploads/NCleanBlue/js/CathPrint%20collaborates%20with%20MRA%20Medical.pdf">Spiro Apnea diagnostic catheters</a> bringing in CathPrint's first million Swedish Kronor.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2013</h4>
+            </div>
+            <div class="timeline-body">
+              <p>CathPrint collaborates with <a href="http://www.mynewsdesk.com/se/stockholm_innovation___growth__sting/pressreleases/medicinteknikfoeretaget-cathprint-inleder-samarbete-med-m-dialysis-845887">M Dialysis</a>. Press release.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-star"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">2015</h4>
+            </div>
+            <div class="timeline-body">
+              <p>CathPrint becomes a catheter producer for Spiro Medical. CathPrint catheter technology is now being used by patients through Spiro'Sleep Related Breathing Disorder application.</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Container (Technology Section Carousel) -->
+<!--
+<div id="technology" class="container-fluid text-center">
+<h2>TECHNOLOGY</h2>
+<h4>Driven by innovation, CathPrint AB brings to the medical industry a new and effective method of catheter production, substantially reducing manpower efforts and costs. Working with various companies in the catheter industry, CathPrint has introduced novel solutions to producing catheters with differing requirements.</h4>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">-->
+    <!-- Indicators --><!--
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>-->
+
+    <!-- Wrapper for slides --><!--
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>For simple catheters: CathPrint™<br><span style="font-style:normal;">
+        <p>Enables automated and rational production of catheters.
+        Enables design and production of catheters that are more complex and advanced than those available today.Simplifies functionality and component addition to present catheters.Reduces overall production costs by more than 50%.Is strongly protected by patents and patent applications.
+        </p></span></h4>
+      </div>
+      <div class="item">
+         <h4>For composite catheter: CathPrint™ Integrated<br><span style="font-style:normal;">
+        <p>In situations that require lumens, e.g. for liquid solutions such as medicine or nutrients, an extrusion with at least two lumens, one of which is occupied by a CathPrint™ catheter, is used. The CathPrint™ Integrated technology eliminates the need for numerous wires and significantly rationalises the production process. This arrangement also maintains flexibility of the device. CathPrint™ Integrated is a patent-protected technology.
+        </p></span></h4>
+      </div>
+      <div class="item">
+        <h4>For fast prototyping: CathPrint™ Prefab<br><span style="font-style:normal;">
+        <p>CathPrint™ Prefab is manufactured with use of standard flexible PCB’s and rational electronics production processes. It is inserted into the lumen that normally is used for the wires connecting electrodes, sensors or other electronics. The product is based on CathPrint’s patented technology.In production, the Prefab is inserted into a lumen of the customer’s extrusion that is prepared with holes at the positions of electrodes and pre-mounted sensors. Electrodes are connected by conductive glue and sensors are covered by a protecting gel. The distal tip is optional and can be used to pre-mount customer sensors/electronics or be equipped with pads for wire-bonding.CathPrint™ Prefab can be delivered for a variety of catheters. The length can be up to 120 cm and the number of electrodes and sensors can be up to 20 depending on the length and diameter of the Prefab.
+        </p></span></h4>
+      </div>
+    </div>-->
+
+    <!-- Left and right controls --><!--
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>-->
+
+<div id="technology" class="container-fluid text-center">
+  <h2>TECHNOLOGY</h2>
+  <h4>Driven by innovation, CathPrint AB brings to the medical industry a new and effective method of catheter production, substantially reducing manpower efforts and costs. Working with various companies in the catheter industry, CathPrint has introduced novel solutions to producing catheters with differing requirements.</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="catheter.png">
+      <h4>For simple catheters: CathPrint™</h4>
+      <p>Enables automated and rational production of catheters.
+      Enables design and production of catheters that are more complex and advanced than those available today.
+      Simplifies functionality and component addition to present catheters.
+      Reduces overall production costs by more than 50%.
+      Is strongly protected by patents and patent applications.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="integrated.png">
+      <h4>For composite catheter: CathPrint™ Integrated</h4>
+      <p>In situations that require lumens, e.g. for liquid solutions such as medicine or nutrients, an extrusion with at least two lumens, one of which is occupied by a CathPrint™ catheter, is used. 
+      The CathPrint™ Integrated technology eliminates the need for numerous wires and significantly rationalises the production process. This arrangement also maintains flexibility of the device. CathPrint™ Integrated is a patent-protected technology.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="fast.png">
+      <h4>For fast prototyping: CathPrint™ Prefab</h4>
+      <p>CathPrint™ Prefab is manufactured with use of standard flexible PCB’s and rational electronics production processes. It is inserted into the lumen that normally is used for the wires connecting electrodes, sensors or other electronics. The product is based on CathPrint’s patented technology.
+      In production, the Prefab is inserted into a lumen of the customer’s extrusion that is prepared with holes at the positions of electrodes and pre-mounted sensors. Electrodes are connected by conductive glue and sensors are covered by a protecting gel. The distal tip is optional and can be used to pre-mount customer sensors/electronics or be equipped with pads for wire-bonding.
+      CathPrint™ Prefab can be delivered for a variety of catheters. The length can be up to 120 cm and the number of electrodes and sensors can be up to 20 depending on the length and diameter of the Prefab.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Business Section) -->
+<div id="business" class="container-fluid text-center">
+  <h2>BUSINESS</h2>
+  <h4>CathPrint offers its technology to companies that market, sell and manufacture catheters or endoscopes (product owners). The technology can be used to rationalized existing products or develop new advanced products that are difficult to manufacture with current technology.</h4>
+
+  <h4>CathPrint plans for three different modes of operation:</h4>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>OEM design and production to small and medium sized companies.<br>This is the way we are working with our current customers and prospects.<br>CathPrint develops and adapts the catheter production process together with the<br>customers and production will be done by us or with the aid of a production partner.<br>Packaged and sterilized catheters are delivered to the customer.
+        </h4>
+      </div>
+      <div class="item">
+         <h4>Licensing our technology to companies who manage their production themselves.<br>In this case the customer develops and adapts the catheter production process with<br>the aid of CathPrint. Production is established at the customers’ site using production<br>equipment supplied by CathPrint, who will also support the production establishment.<br>The client pays for the establishment and training costs, and also royalty per produced catheter.
+         </h4>
+      </div>
+      <div class="item">
+        <h4>In the long run we plan to develop own products by support of our world leading medical network.<br>This may also be as joint ventures with other companies.
+        </h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>  
+
+<!-- Container (People Section) -->
+<div id="people" class="container-fluid text-center bg-white">
+  <h2>People</h2><br>
+  <div class="row text-center slideanim">
+    <div class="col-sm-12">
+      <img src="elincircle.png" alt="Elin">
+      <p><strong>Elin Mignérus</strong></p>
+      <p>Chief Executive Officer</p>
+      <p>Insert Education Here</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="bengtcircle.png" alt="Bengt">
+      <p><strong>Bengt Källbäck</strong></p>
+      <p>Co-Founder, Chief Technology Officer</p>
+      <p>PhD and Associate Professor in Solid State Electronics at the Royal Institute of Technology, Stockholm (KTH).</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="haakancircle.png" alt="Haakan">
+      <p><strong>Håkan Elmqvist</strong></p>
+      <p>Co-Founder</p>
+      <p>PhD in applied electronics and Professor Emeritus of biomedical engineering at Karolinska Institute.</p>
+    </div>
+    <div class="col-sm-4">
+      <img src="larscircle.png" alt="Lars">
+      <p><strong>Lars-Åke Brodin</strong></p>
+      <p>Co-Founder</p>
+      <p>Professor of biomedical engineering at KTH, where he is Dean of the School of Engineering and Health.</p>
+    </div>
+    <div class="col-sm-12">
+      <img src="chriscircle.png" alt="Chris">
+      <p><strong>Chris Minar</strong></p>
+      <p>US Partner</p>
+      <p>Technical and business leader with over 24 years of experience in medical device R&D,<br>program management, general management and manufacturing.</p>
+    </div>
+</div><br>
+
+<!-- Container (Career Section) --> 
+<div id="career" class="container-fluid">
+<div class="text-center">
+  <h2>Join the team!</h2></div>
+  <div class="row">
+    <div class="col-sm-8">
+      <h4>CathPrint is a young and innovative company in the medical technology industry. We help our customers to develop new advanced catheters and endoscopes using our patented production technology. In order to serve that mission, we are always looking for self-motivated and skillful persons to be part of our team. If you are interested in working with us, why don’t you drop us an email.</h4>
+      <p>CathPrint is typically interested in recently graduated electrical engineers or students searching for a Master Thesis with a basic knowledge of electrical schematics. The perfect candidate would also have a medical background and know about MEMS (Microelectromechanical Systems), pressure, temperature and oxygen sensors.</p>
+      <p>Kindly send your CV and a motivation letter to career@cathprint.se.</p>
+    </div>
+    <div class="col-sm-4">
+      <br><br><br><br><img src="handshake.png">
+    </div>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<!--<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>-->
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <p>For specific prototypes or long-term cooperation, feel free to contact us about your project and our experts will come back to you shortly with a technical opinion. For demonstration purposes, testing a prototype is a quick and efficient way to evaluate the suitability of our technology for your application. CathPrint can offer you a "catheter kit" made of a catheter part with one pressure sensor, its electronics, a user guide and some technical assistance for 2000€. You will then be able to measure and display pressure in air or in water in real time.</p><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <p><strong>Main Office</strong></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Björnnäsvägen 21</p><p>114 19 Stockholm, Sweden</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +46 (0)8-4001 1967/ +46 (0)8-4001 1867</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> info@cathprint.se</p><br>
+    </div>
+    <div class="col-sm-6">    
+      <p><strong>US Branch</strong></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> 1556 270th St W</p><p>New Prague, MN 56071, United States</p>
+      <p><span class="glyphicon glyphicon-phone"></span>  +1 952 240 2125</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> chris.minar@cathprint.se</p>
+    </div>
+    <!--<div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>-->
+</div>
+
+<div id="googleMapSE" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(59.357270, 18.058326);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMapSE"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <div>Icons made by <a href="http://www.flaticon.com/authors/situ-herrera" title="Situ Herrera">Situ Herrera,</a> <a href="http://www.freepik.com" title="Freepik">Freepik,</a> <a href="http://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar </a> and <a href="http://www.flaticon.com/authors/madebyoliver" title="Madebyoliver">Madebyoliver</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> are licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+  <p>Website Designed By Karthik</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
 </html>
