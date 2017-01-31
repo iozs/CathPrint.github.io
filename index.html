@@ -279,6 +279,19 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+  .parallax {
+      /* The image used */
+      background-image: url("home.jpg");
+
+      /* Set a specific height */
+      min-height: 500px; 
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -342,7 +355,7 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
+<div class="parallax text-center">
   <h1>CathPrint AB</h1>
   <p>Offering catheter manufacturers improved profitability</p> 
 </div>
