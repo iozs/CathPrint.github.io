@@ -10,6 +10,16 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+          placement : 'top',
+          trigger : 'hover'
+      });
+  });
+  </script>
+
   <style>
   body {
       font: 400 15px Lato, sans-serif;
@@ -451,11 +461,10 @@
     <div class="col-sm-4">
       <img src="catheter.png">
       <h4>For simple catheters: CathPrint™</h4>
-      <p class="text-justify">Enables automated and rational production of catheters.
-      Enables design and production of catheters that are more complex and advanced than those available today.
-      Simplifies functionality and component addition to present catheters.
-      Reduces overall production costs by more than 50%.
-      Is strongly protected by patents and patent applications.</p>
+      <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#simple">Read More</button>
+      <div id="simple" class="collapse text-justify">
+        Enables automated and rational production of catheters. Enables design and production of catheters that are more complex and advanced than those available today. Simplifies functionality and component addition to present catheters. Reduces overall production costs by more than 50%. Is strongly protected by patents and patent applications.
+      </div>
     </div>
     <div class="col-sm-4">
       <img src="integrated.png">
