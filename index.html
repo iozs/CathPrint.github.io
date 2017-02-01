@@ -376,6 +376,13 @@
     background-color: #ffffff;
     border-color: #402081;
   }
+  .vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -438,8 +445,8 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h2>OFFERING CATHETER MANUFACTURERS IMPROVED PROFITABILITY</h2>
+<div class="jumbotron vertical-center">
+  <h1>OFFERING CATHETER MANUFACTURERS IMPROVED PROFITABILITY</h1>
 </div>
 
 <!-- Container (About Section) -->
