@@ -420,6 +420,45 @@
         font-size: 150px;
     }
   }
+  .container {
+    position: relative;
+    width: 50%;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #402081;
+  }
+
+  .col-sm-3:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    color: white;
+    font-size: 12.5px;
+    text-align: justify-all;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
   </style>
 </head>
 <body id="welcome" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -477,7 +516,7 @@
   <div class="col-sm-8">
     <h4 class="text-justify">Driven by innovation, CathPrint AB brings to the medical industry a new and effective method of catheter production, substantially reducing manpower efforts and costs. Working with various companies in the catheter industry, CathPrint has introduced novel solutions to producing catheters with differing requirements.</h4>
     <h4 class="text-justify">We are utilizing the proven technology of flexible printed circuit boards (FPCBs), which are the basis for CathPrint’s new innovative process. This enables a semi-automatic operation process for attaching wires, electrodes and contacts, replacing today’s small-scale, handmade manufacturing.</h4>
-    <p class="text-justify">CathPrint’s technology is patent pending.</p>
+    <h4 class="text-justify">CathPrint’s technology is patent pending.</h4>
   </div>
 </div>
 
@@ -486,42 +525,84 @@
 <!-- Container (People Section) -->
 <div id="people" class="container-fluid text-center bg-white">
   <h2>PEOPLE</h2>
+  <h3>TEAM</h3>
   <div class="row text-center slideanim">
-    <div class="col-sm-12">
-      <div class="col-sm-4"></div>
-      <div class="col-sm-4">
-        <img src="elincircle.png" alt="Elin">
-        <p><strong>Elin Mignérus</strong></p>
-        <p>Chief Executive Officer</p>
-        <p>M.Sc. in Biomedical engineering from the Royal Institute of Technology, Stockholm (KTH) and a minor in technopreneurship from the National University of Singapore.</p>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="elin.png" class="img-responsive image" alt="Elin">
+        <div class="overlay">
+          <div class="text">M.Sc. in Biomedical Engineering and Technopreneurship from KTH Royal Institute of Technology and the National University of Singapore.</div>
+        </div>
       </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="bengt.png" class="img-responsive image" alt="Bengt">
+        <div class="overlay">
+          <div class="text">PhD and Associate Professor in Solid State Electronics at <br>KTH Royal Institute of Technology.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div><br><br>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="chris.png" class="img-responsive image" alt="Chris">
+        <div class="overlay">
+          <div class="text">Technical and business leader with over 24 years of experience in medical device R&D, program management, general management and manufacturing.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="bo.png" class="img-responsive image" alt="Bo">
+        <div class="overlay">
+          <div class="text">M.Sc. in Applied Engineering and serial entrepreneur.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
-    <div class="col-sm-4">
-      <img src="bengtcircle.png" alt="Bengt">
-      <p><strong>Bengt Källbäck</strong></p>
-      <p>Co-Founder, Chief Technology Officer</p>
-      <p>PhD and Associate Professor in Solid State Electronics at KTH.</p>
-    </div>
-    <div class="col-sm-4">
-      <img src="haakancircle.png" alt="Haakan">
-      <p><strong>Håkan Elmqvist</strong></p>
-      <p>Co-Founder</p>
-      <p>PhD in applied electronics and Professor Emeritus of biomedical engineering at Karolinska Institute.</p>
-    </div>
-    <div class="col-sm-4">
-      <img src="larscircle.png" alt="Lars">
-      <p><strong>Lars-Åke Brodin</strong></p>
-      <p>Co-Founder</p>
-      <p>Professor of biomedical engineering at KTH, where he is Dean of the School of Engineering and Health.</p>
-    </div>
-    <div class="col-sm-12">
-      <img src="chriscircle.png" alt="Chris">
-      <p><strong>Chris Minar</strong></p>
-      <p>US Partner</p>
-      <p>Technical and business leader with over 24 years of experience in medical device R&D,<br>program management, general management and manufacturing.</p>
+  </div><br><br><br><br><br>
+
+  <h3>ADVISORS</h3>
+  <div class="row text-center slideanim">
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="lars.png" class="img-responsive image" alt="Lars">
+        <div class="overlay">
+          <div class="text">Professor of Biomedical Engineering at KTH Royal Institute of Technology, former Dean of the School of Engineering and Health (KTH).</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="haakan.png" class="img-responsive image" alt="Haakan">
+        <div class="overlay">
+          <div class="text">PhD in Applied Electronics and Professor Emeritus of Biomedical Engineering at Karolinska Institute.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div><br><br>
+
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="anders.png" class="img-responsive image" alt="Anders">
+        <div class="overlay">
+          <div class="text">PhD in Chemical Engineering, Polymer Technology and Professor at KTH Royal Institute of Technology.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-3">
+        <img src="jan.png" class="img-responsive image" alt="Jan">
+        <div class="overlay">
+          <div class="text">Associate Professor of Anesthesiology and Critical Care, and consultant and head of Thoracic Surgery at Karolinska University Hospital.</div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
     </div>
   </div>
-</div>
+</div><br>
   
 <div class="parallaxmedia"></div>
 
